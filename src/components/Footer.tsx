@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Youtube, Instagram, Twitter, Facebook, Mail } from "lucide-react";
+import logo from "@/assets/logo.jpg";
 
 const socialLinks = [
   { name: "YouTube", icon: Youtube, href: "https://youtube.com/@infiniterisestudios" },
@@ -33,13 +34,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Link to="/" className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50">
-                <span className="text-primary font-display font-bold text-lg">IR</span>
-              </div>
-              <span className="font-display text-lg font-semibold text-foreground">
-                Infinite Rise
-              </span>
+            <Link to="/" className="mb-4 block">
+              <img 
+                src={logo} 
+                alt="Infinite Rise Studios" 
+                className="h-12 w-auto object-contain"
+              />
             </Link>
             <p className="text-muted-foreground text-sm mb-6 max-w-xs">
               Inspiring millions to rise beyond their limitations and unlock their infinite potential.
