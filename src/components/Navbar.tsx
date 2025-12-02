@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.jpg";
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -22,12 +23,11 @@ export function Navbar() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center border border-primary/50 group-hover:glow-gold transition-all duration-300">
-              <span className="text-primary font-display font-bold text-lg">IR</span>
-            </div>
-            <span className="hidden sm:block font-display text-lg font-semibold text-foreground">
-              Infinite Rise
-            </span>
+            <img 
+              src={logo} 
+              alt="Infinite Rise Studios" 
+              className="h-10 md:h-12 w-auto object-contain"
+            />
           </Link>
 
           {/* Desktop Navigation */}
