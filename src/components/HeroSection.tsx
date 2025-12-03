@@ -47,7 +47,7 @@ export function HeroSection() {
               </Button>
             </Link>
             <a
-              href="https://youtube.com/@infiniterisestudios"
+              href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -50,7 +50,7 @@ export function Navbar() {
           {/* YouTube CTA */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="https://youtube.com/@infiniterisestudios"
+              href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary hover:bg-primary/20 transition-all duration-300"
@@ -90,7 +90,7 @@ export function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://youtube.com/@infiniterisestudios"
+                href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary w-fit"
