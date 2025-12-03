@@ -3,19 +3,31 @@ import logo from "@/assets/logo.jpg";
 
 export function LoadingScreen() {
   const [isLoading, setIsLoading] = useState(true);
+  const [isFading, setIsFading] = useState(false);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsLoading(false);
+    const fadeTimer = setTimeout(() => {
+      setIsFading(true);
     }, 1500);
 
-    return () => clearTimeout(timer);
+    const removeTimer = setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+
+    return () => {
+      clearTimeout(fadeTimer);
+      clearTimeout(removeTimer);
+    };
   }, []);
 
   if (!isLoading) return null;
 
   return (
-    <div className="fixed inset-0 z-[100] flex items-center justify-center bg-background">
+    <div 
+      className={`fixed inset-0 z-[100] flex items-center justify-center bg-background transition-opacity duration-500 ${
+        isFading ? "opacity-0" : "opacity-100"
+      }`}
+    >
       <div className="flex flex-col items-center gap-6">
         {/* Logo with pulse animation */}
         <div className="relative">
