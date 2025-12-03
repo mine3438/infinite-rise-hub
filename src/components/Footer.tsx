@@ -3,7 +3,7 @@ import { Youtube, Instagram, Twitter, Facebook, Mail } from "lucide-react";
 import logo from "@/assets/logo.jpg";
 
 const socialLinks = [
-  { name: "YouTube", icon: Youtube, href: "https://youtube.com/@infiniterisestudios" },
+  { name: "YouTube", icon: Youtube, href: "https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA" },
   { name: "Instagram", icon: Instagram, href: "https://instagram.com/infiniterisestudios" },
   { name: "Twitter", icon: Twitter, href: "https://twitter.com/infiniterise" },
   { name: "Facebook", icon: Facebook, href: "https://facebook.com/infiniterisestudios" },

@@ -172,7 +172,7 @@ export default function Index() {
                 New videos every week to fuel your journey to greatness.
               </p>
               <a
-                href="https://youtube.com/@infiniterisestudios"
+                href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
                 target="_blank"
                 rel="noopener noreferrer"
               >
