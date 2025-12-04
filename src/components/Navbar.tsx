@@ -1,18 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Youtube } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.jpg";
-
-declare global {
-  interface Window {
-    gapi?: {
-      ytsubscribe?: {
-        go: (container?: HTMLElement) => void;
-      };
-    };
-  }
-}
 
 const navLinks = [
   { name: "Home", path: "/" },
@@ -26,13 +16,6 @@ const navLinks = [
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
-
-  useEffect(() => {
-    // Re-render YouTube subscribe buttons when component mounts or location changes
-    if (window.gapi?.ytsubscribe) {
-      window.gapi.ytsubscribe.go();
-    }
-  }, [location.pathname]);
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border/50">
@@ -64,14 +47,17 @@ export function Navbar() {
             ))}
           </div>
 
-          {/* YouTube Subscribe Button */}
+          {/* YouTube CTA */}
           <div className="hidden md:flex items-center gap-4">
-            <div 
-              className="g-ytsubscribe" 
-              data-channelid="UCJTTdfgEsSJ4O_tQ3uZ8FUA" 
-              data-layout="default" 
-              data-count="default"
-            />
+            <a
+              href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary hover:bg-primary/20 transition-all duration-300"
+            >
+              <Youtube className="w-4 h-4" />
+              <span className="text-sm font-medium">Subscribe</span>
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -103,12 +89,15 @@ export function Navbar() {
                   {link.name}
                 </Link>
               ))}
-              <div 
-                className="g-ytsubscribe" 
-                data-channelid="UCJTTdfgEsSJ4O_tQ3uZ8FUA" 
-                data-layout="default" 
-                data-count="default"
-              />
+              <a
+                href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 px-4 py-2 bg-primary/10 border border-primary/30 rounded-full text-primary w-fit"
+              >
+                <Youtube className="w-4 h-4" />
+                <span className="text-sm font-medium">Subscribe</span>
+              </a>
             </div>
           </div>
         )}
