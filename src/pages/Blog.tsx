@@ -4,7 +4,101 @@ import { PageHeader } from "@/components/PageHeader";
 import { BlogCard } from "@/components/BlogCard";
 import { NewsletterForm } from "@/components/NewsletterForm";
 
+// Blog thumbnail imports
+import cinematicAiImg from "@/assets/blog/cinematic-ai-videos.jpg";
+import aiToolsImg from "@/assets/blog/ai-tools-faceless.jpg";
+import psychologyViralImg from "@/assets/blog/psychology-viral.jpg";
+import facelessBrandImg from "@/assets/blog/building-faceless-brand.jpg";
+import scriptingImg from "@/assets/blog/scripting-videos.jpg";
+import monetizeImg from "@/assets/blog/monetize-beyond-adsense.jpg";
+import thumbnailDesignImg from "@/assets/blog/thumbnail-design.jpg";
+import morningRoutineImg from "@/assets/blog/morning-routine.jpg";
+import channelsFailImg from "@/assets/blog/why-channels-fail.jpg";
+import futureAiImg from "@/assets/blog/future-ai-content.jpg";
+
 const blogPosts = [
+  // New AI/Faceless YouTube posts
+  {
+    title: "How Infinite Rise Studios Creates Cinematic AI Videos",
+    excerpt: "Discover the secrets behind how Infinite Rise Studios produces stunning cinematic AI videos that captivate millions without ever showing a face.",
+    date: "Dec 4, 2025",
+    slug: "cinematic-ai-videos-guide",
+    image: cinematicAiImg,
+    category: "AI Creation",
+  },
+  {
+    title: "5 AI Tools Every Faceless YouTuber Needs in 2025",
+    excerpt: "These five essential AI tools will transform your faceless YouTube channel from amateur to professional without breaking the bank.",
+    date: "Dec 4, 2025",
+    slug: "ai-tools-faceless-youtubers",
+    image: aiToolsImg,
+    category: "AI Tools",
+  },
+  {
+    title: "The Psychology Behind Viral Motivational Content",
+    excerpt: "Understanding why certain motivational content goes viral can transform your YouTube strategy and help you create videos that truly resonate.",
+    date: "Dec 4, 2025",
+    slug: "psychology-viral-motivation",
+    image: psychologyViralImg,
+    category: "Strategy",
+  },
+  {
+    title: "Building a Faceless Brand That Lasts Forever",
+    excerpt: "Learn how to build a timeless faceless brand that can grow, evolve, and even be sold without depending on any single person.",
+    date: "Dec 4, 2025",
+    slug: "building-faceless-brand",
+    image: facelessBrandImg,
+    category: "Branding",
+  },
+  {
+    title: "How We Script Videos That Keep Viewers Watching",
+    excerpt: "The secret to high retention isn't luck—it's scriptwriting technique. Here's exactly how Infinite Rise Studios structures every video for maximum engagement.",
+    date: "Dec 4, 2025",
+    slug: "scripting-engaging-videos",
+    image: scriptingImg,
+    category: "Content Creation",
+  },
+  {
+    title: "Monetizing Your Faceless Channel Beyond AdSense",
+    excerpt: "AdSense is just the beginning. Discover seven powerful revenue streams that can transform your faceless YouTube channel into a thriving business.",
+    date: "Dec 4, 2025",
+    slug: "monetize-beyond-adsense",
+    image: monetizeImg,
+    category: "Monetization",
+  },
+  {
+    title: "Creating Thumbnails That Demand Clicks",
+    excerpt: "Your thumbnail is your video's first impression. Learn the design principles that make viewers unable to resist clicking on your content.",
+    date: "Dec 4, 2025",
+    slug: "thumbnail-design-secrets",
+    image: thumbnailDesignImg,
+    category: "Design",
+  },
+  {
+    title: "The Morning Routine That Fuels Creative Excellence",
+    excerpt: "Creativity isn't random—it's cultivated. Discover the morning routine behind Infinite Rise Studios' consistent creative output.",
+    date: "Dec 4, 2025",
+    slug: "creative-morning-routine",
+    image: morningRoutineImg,
+    category: "Productivity",
+  },
+  {
+    title: "Why Most YouTube Channels Fail (And How to Avoid It)",
+    excerpt: "Ninety percent of YouTube channels never gain traction. Understanding why they fail—and what successful channels do differently—can save your creative dreams.",
+    date: "Dec 4, 2025",
+    slug: "why-channels-fail",
+    image: channelsFailImg,
+    category: "Strategy",
+  },
+  {
+    title: "The Future of AI-Generated Content in 2025 and Beyond",
+    excerpt: "AI content creation is evolving faster than ever. Here's what the next wave of technology means for creators and how to stay ahead of the curve.",
+    date: "Dec 4, 2025",
+    slug: "future-ai-content-2025",
+    image: futureAiImg,
+    category: "AI Creation",
+  },
+  // Original motivational posts
   {
     title: "10 Morning Habits That Will Transform Your Life",
     excerpt: "Start your day with purpose and watch how everything changes. These proven habits have helped millions achieve their dreams.",
@@ -55,7 +149,7 @@ const blogPosts = [
   },
 ];
 
-const categories = ["All", "Mindset", "Habits", "Personal Growth", "Success", "Resilience"];
+const categories = ["All", "AI Creation", "AI Tools", "Strategy", "Branding", "Content Creation", "Monetization", "Design", "Productivity", "Mindset", "Habits", "Personal Growth", "Success", "Resilience", "Growth"];
 
 export default function Blog() {
   return (
