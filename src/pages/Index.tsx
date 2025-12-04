@@ -171,16 +171,16 @@ export default function Index() {
                 Join over 500,000 subscribers and get your daily dose of motivation. 
                 New videos every week to fuel your journey to greatness.
               </p>
-              <a
-                href="https://www.youtube.com/channel/UCJTTdfgEsSJ4O_tQ3uZ8FUA"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <Button className="px-8 py-6 text-base font-semibold bg-destructive text-destructive-foreground hover:bg-destructive/90">
-                  <Youtube className="mr-2 w-5 h-5" />
-                  Subscribe Now
-                </Button>
-              </a>
+             <a
+  href="https://www.youtube.com/@InfiniteRiseStudios?sub_confirmation=1"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="px-8 py-6 text-base font-semibold bg-destructive text-destructive-foreground hover:bg-destructive/90">
+    <Youtube className="mr-2 w-5 h-5" />
+    Subscribe Now
+  </Button>
+</a>
             </div>
           </div>
         </section>
